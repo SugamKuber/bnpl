@@ -12,7 +12,7 @@ import { data } from "autoprefixer"
 import { ethers } from "ethers"
 import Link from 'next/link'
 import "react-toastify/dist/ReactToastify.css"
-import { solpayAddress } from "../constants"
+import { solpayAddress } from "../constants/index"
 
 const CoinGecko = require("coingecko-api")
 const CheckoutPage = () => {
@@ -35,7 +35,7 @@ const CheckoutPage = () => {
     setModal,
     setUrl,
     url,
-  } = useContext(solarzuContext)
+  } = useContext(solpayContext)
   const ethPrice = async () => {
     const CoinGeckoClient = new CoinGecko()
     const priceOfEth = await CoinGeckoClient.simple.price({
@@ -141,7 +141,7 @@ const CheckoutPage = () => {
 
       await (
         await provider.sendTransaction({
-          to: solarzuAddress,
+          to: solpayAddress,
           value: ethers.utils.parseEther("" + fee_calculator(maticVal, 10)),
         })
       ).wait()

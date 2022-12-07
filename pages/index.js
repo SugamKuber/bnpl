@@ -1,11 +1,7 @@
 import Head from "next/head.js"
-
 import Homepage from "../components/Homepage.jsx"
 import { useContext } from "react"
-import Checkout from "./Checkout.js"
 import { solpayContext } from '../components/layout';
-
-
 
 export default function Home() {
   const { setHome } = useContext(solpayContext);

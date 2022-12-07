@@ -1,13 +1,10 @@
-import { useContext ,useEffect } from 'react';
-import {solarzuContext} from '../components/layout';
-
+import { useContext, useEffect } from 'react';
+import { solpayContext } from '../components/layout';
 import CheckoutPage from "../components/CheckoutPage"
 
-
-
 export default function Checkout() {
-  const {changeHome,home,contract,setUrl} = useContext(solarzuContext);
-  useEffect(()=>{
+  const { changeHome, home, contract, setUrl } = useContext(solpayContext);
+  useEffect(() => {
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);
     const url = params.get('tokenUrl')
@@ -15,12 +12,12 @@ export default function Checkout() {
   })
 
   useEffect(() => {
-      if(home){
-          changeHome();
-      }
-  },[home]);
+    if (home) {
+      changeHome();
+    }
+  }, [home]);
 
-  
+
   return (
     <CheckoutPage />
   )
