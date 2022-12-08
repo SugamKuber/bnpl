@@ -59,6 +59,14 @@ npm run dev
 **Other tools**: Hardhat, Alchemy, web3.js
 
 ---
+## Demo
+
+[click to open solpay](https://solpay.sugamkuber.me)
+
+![image](https://user-images.githubusercontent.com/86460476/206467642-ec0bff55-ca11-454b-94d9-134d898bd097.png)
+![image](https://user-images.githubusercontent.com/86460476/206467767-1c719e2c-d394-4772-9a12-5c081257d34d.png)
+![image](https://user-images.githubusercontent.com/86460476/206467882-4f7c47be-8b9d-4236-9922-1f113811d62a.png)
+
 
 **VISION**: Our vision is to make an economy for the creators and artists in the digital space and decentralize the creator's relationship with their followers/fans/subscribers
 We began this journey to make digital assets accessible, affordable, and usable for everyone. Now, we believe it is our calling to create a simple networked ecosystem that will enable finance for both consumers and the creators, thus creating a circle of the creator economy.
